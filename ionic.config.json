@@ -1,0 +1,8 @@
+{
+  "name": "love-option",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "8fddea76"
+}

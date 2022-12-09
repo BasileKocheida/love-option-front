@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "love-option",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
