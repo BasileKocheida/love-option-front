@@ -1,0 +1,46 @@
+.RegisterScreenContent{
+
+    background-color: var(--app-color-tertiary);
+    height: 100%;
+
+    .sec-register__img{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+    .sec-register__inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            color: white;
+            text-align: center;
+        }
+
+        .registerScreenInput{
+            margin: 10px;
+            border-radius: 50px;
+            border: solid var(--app-color-secondary) 2px;
+            width: 80%;
+            background-color: rgb(43, 42, 42);
+
+            .registerput{
+                border-style: none;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+
+    .sec-register__href {
+        
+        margin-top: 10%;
+        text-align: center;
+        a{
+            color: white;
+        }
+    }
+}

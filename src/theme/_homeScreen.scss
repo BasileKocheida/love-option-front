@@ -1,0 +1,22 @@
+.HomeContent{
+    background-color: #1A1B22;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sec-home__cardContent{
+        
+        .sec-home-cardContent__card{
+            background-color: var(--app-color-tertiary);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: solid var(--app-color-secondary) 2px;
+            color: var(--app-color-primary);
+            text-align: center;
+            height: 15vh;
+            width: auto;
+        }
+    }
+}
