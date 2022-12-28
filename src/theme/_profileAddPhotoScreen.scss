@@ -1,0 +1,27 @@
+.ProfileAddPhotoContent{
+    background-color: #1A1B22;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        color: white;
+    }
+
+    .sec-ProfileAddPhoto-cardContent__card{
+        background-color: var(--app-color-tertiary);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: solid var(--app-color-secondary) 2px;
+        color: var(--app-color-primary);
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        display: flex;
+    }
+   
+}

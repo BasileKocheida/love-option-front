@@ -12,14 +12,15 @@
         </div>
         <div class="sec-login__inputs">
           <p>Let's sign in !</p>
-          <ion-item class="loginScreenInput" style="background-color: black;">
+          <ion-item class="loginScreenInput custom">
             <ion-label>Email</ion-label>
-            <ion-input class="loginput" placeholder="Email"></ion-input>
+            <ion-input class="loginput" placeholder="Email" v-model="email"></ion-input>
           </ion-item>
-          <ion-item class="loginScreenInput">
+          <ion-item class="loginScreenInput custom">
             <ion-label>Password</ion-label>
-            <ion-input placeholder="Password"></ion-input>
+            <ion-input placeholder="Password" v-model="password"></ion-input>
           </ion-item>
+          <button @click.prevent = "logIn()" class="btnNext">Sign in</button>
           <div class="sec-login__href">
             <a href="">Haven't account ?</a>
           </div>
@@ -32,10 +33,36 @@
 <script lang="ts">
 import { defineComponent} from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonItem, IonLabel, IonImg } from '@ionic/vue';
+import {BackendMixin} from '../mixins/backend';
+import router from '../router';
+import store from '../store';
 
 export default  defineComponent({
   name: 'LoginScreen',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonInput, IonItem, IonImg, IonLabel }
+  mixins: [BackendMixin],
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonInput, IonItem, IonImg, IonLabel },
+  data(){
+    return{
+      email: "",
+      password: ""
+    }
+  },
+  
+  methods: {
+    //function in mixins => backends
+    async logIn() {
+        try {
+            this.login(this.email, this.password)
+            console.log("redirect");
+            await router.push({ name: 'HomeScreen'})
+        }
+        catch (err) {
+            this.addError(this.getErrorText(err))
+        }
+    }
+  }
 });
+
+
 
 </script>

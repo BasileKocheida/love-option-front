@@ -9,7 +9,7 @@ import {
   import { makeConfig } from '@/types/config'
   import { BackendApi, gerRouterUrl, getErrorText } from '@/utils/http'
   
-  const baseUrl = "http://127.0.0.1:8000";
+  const baseUrl = "https://127.0.0.1:8000";
 
   export const BackendMixin = {
 
@@ -65,7 +65,9 @@ import {
       },
   
       login(email: string, password: string) {
+      
         return new Promise(
+          
           (resolve, reject) => {
             const fullUrl: string = baseUrl + '/authentication_token'
             axios({
@@ -79,14 +81,10 @@ import {
               } else {
                 await store.dispatch('setToken', resp.data.token)
                 await this.getUserInfo()
-                // const user = await this.registerUser(resp.data)
-                // if (user) {
-                //   resolve(user)
-                // } else {
-                //   reject(Error('Utilisateur inconnu'))
-                // }
               }
             }).catch(err => {
+              console.log("ERROR : ", err);
+              
               reject(err)
             })
           }
@@ -95,7 +93,7 @@ import {
   
       getUserInfo(){
         return new Promise( (resolve, reject) => {
-
+          
             new BackendApi('get', baseUrl+'/api/me')
               .callApi(null, '', false)
               .then(async (response)=>{

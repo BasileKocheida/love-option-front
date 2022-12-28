@@ -18,19 +18,28 @@
             text-align: center;
         }
 
+        ion-item.custom{
+            --background: #be6b6b78;
+            color: white;
+        }
         .registerScreenInput{
             margin: 10px;
             border-radius: 50px;
             border: solid var(--app-color-secondary) 2px;
             width: 80%;
-            background-color: rgb(43, 42, 42);
+            --background-color: rgb(43, 42, 42);
 
-            .registerput{
-                border-style: none;
-                width: 100%;
-            }
+
         }
-
+        
+        .btnNext{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: var(--app-color-primary);
+            width: 80%;
+            color: white;
+        }
 
     }
 

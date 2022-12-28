@@ -16,16 +16,39 @@ const routes: Array<RouteRecordRaw> = [
         redirect: '/tabs/LoginScreen'
       },
       {
+        name: 'HomeScreen',
         path: 'HomeScreen',
         component: () => import('@/views/HomeScreen.vue')
       },
       {
+        name: 'LoginScreen',
         path: 'LoginScreen',
         component: () => import('@/views/LoginScreen.vue')
       },
       {
+        name: 'RegisterScreen',
         path: 'RegisterScreen',
         component: () => import('@/views/RegisterScreen.vue')
+      },
+      {
+        name: 'ProfileAddInfoScreen',
+        path: 'ProfileAddInfoScreen',
+        component: () => import('@/views/ProfileAddInfoScreen.vue')
+      },
+      {
+        name: 'ProfileAddInterestScreen',
+        path: 'ProfileAddInterestScreen',
+        component: () => import('@/views/ProfileAddInterestScreen.vue')
+      },
+      {
+        name: 'ProfileAddPhotoScreen',
+        path: 'ProfileAddPhotoScreen',
+        component: () => import('@/views/ProfileAddPhotoScreen.vue')
+      },
+      {
+        name: 'ProfileScreen',
+        path: 'ProfileScreen',
+        component: () => import('@/views/ProfileScreen.vue')
       }
     ]
   }

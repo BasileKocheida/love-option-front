@@ -17,6 +17,26 @@
           <ion-icon :icon="square" />
           <ion-label>Register</ion-label>
         </ion-tab-button>
+
+        <ion-tab-button tab="ProfileAddInfoScreen" href="/tabs/ProfileAddInfoScreen">
+          <ion-icon :icon="square" />
+          <ion-label>Profile infos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="ProfileAddInterestScreen" href="/tabs/ProfileAddInterestScreen">
+          <ion-icon :icon="ellipse" />
+          <ion-label>Profile interests</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="ProfileAddPhotoScreen" href="/tabs/ProfileAddPhotoScreen">
+          <ion-icon :icon="ellipse" />
+          <ion-label>Profile photos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="ProfileScreen" href="/tabs/ProfileScreen">
+          <ion-icon :icon="ellipse" />
+          <ion-label>Profile</ion-label>
+        </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>

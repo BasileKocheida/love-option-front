@@ -1,0 +1,47 @@
+.ProfileScreenContent{
+    background-color: #1A1B22;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+    .sec-profile__img{
+        width: 50vh;
+        height: 50vh;
+        top: 0;
+    }
+
+    .sec-profile__data{
+        width: 50vh;
+
+        h5{
+            color: white;
+        }
+
+        p{
+            color: rgb(166, 171, 166);
+            font-weight: bold;
+        }
+
+        .profileNameAge{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .profileInterests{
+            display: flex;
+            flex-wrap: wrap;
+
+            p{
+                background-color: var(--app-color-primary);
+                color: white;
+                border-radius: 50px;
+                min-width: 50px;
+                padding: 10px;
+                margin: 5px;
+                text-align: center;
+            }
+        }
+    }
+}

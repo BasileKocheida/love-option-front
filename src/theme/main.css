@@ -90,16 +90,23 @@ http://ionicframework.com/docs/theming/ */
   color: white;
   text-align: center;
 }
+.loginScreenContent .sec-login__inputs ion-item.custom {
+  --background: #be6b6b78;
+  color: white;
+}
 .loginScreenContent .sec-login__inputs .loginScreenInput {
   margin: 10px;
   border-radius: 50px;
   border: solid var(--app-color-secondary) 2px;
   width: 80%;
-  background-color: rgb(43, 42, 42);
 }
-.loginScreenContent .sec-login__inputs .loginScreenInput .loginput {
-  border-style: none;
-  width: 100%;
+.loginScreenContent .sec-login__inputs .btnNext {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--app-color-primary);
+  width: 80%;
+  color: white;
 }
 .loginScreenContent .sec-login__href {
   margin-top: 10%;
@@ -127,16 +134,24 @@ http://ionicframework.com/docs/theming/ */
   color: white;
   text-align: center;
 }
+.RegisterScreenContent .sec-register__inputs ion-item.custom {
+  --background: #be6b6b78;
+  color: white;
+}
 .RegisterScreenContent .sec-register__inputs .registerScreenInput {
   margin: 10px;
   border-radius: 50px;
   border: solid var(--app-color-secondary) 2px;
   width: 80%;
-  background-color: rgb(43, 42, 42);
+  --background-color: rgb(43, 42, 42);
 }
-.RegisterScreenContent .sec-register__inputs .registerScreenInput .registerput {
-  border-style: none;
-  width: 100%;
+.RegisterScreenContent .sec-register__inputs .btnNext {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--app-color-primary);
+  width: 80%;
+  color: white;
 }
 .RegisterScreenContent .sec-register__href {
   margin-top: 10%;
@@ -163,6 +178,135 @@ http://ionicframework.com/docs/theming/ */
   text-align: center;
   height: 15vh;
   width: auto;
+}
+
+.ProfileAddInfoScreenContent {
+  background-color: var(--app-color-tertiary);
+  height: auto;
+}
+.ProfileAddInfoScreenContent .sec-profileInfo__img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+.ProfileAddInfoScreenContent .sec-profileInfo__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ProfileAddInfoScreenContent .sec-profileInfo__inputs p {
+  color: white;
+  text-align: center;
+}
+.ProfileAddInfoScreenContent .sec-profileInfo__inputs ion-item.custom {
+  --background: #be6b6b78;
+  color: white;
+}
+.ProfileAddInfoScreenContent .sec-profileInfo__inputs .ProfileAddInfoScreenInput {
+  margin: 10px;
+  border-radius: 50px;
+  border: solid var(--app-color-secondary) 2px;
+  width: 80%;
+}
+.ProfileAddInfoScreenContent .sec-profileInfo__inputs .btnNext {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--app-color-primary);
+  width: 80%;
+  color: white;
+}
+
+.ProfileAddInterestScreenContent {
+  background-color: var(--app-color-tertiary);
+  height: 100%;
+  padding: 5px;
+}
+.ProfileAddInterestScreenContent p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.ProfileAddInterestScreenContent .sec-profileInterest__btn {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ProfileAddInterestScreenContent .sec-profileInterest__btn .btnInterest {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--app-color-primary);
+  width: 80px;
+  color: white;
+}
+
+.ProfileAddPhotoContent {
+  background-color: #1A1B22;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ProfileAddPhotoContent p {
+  color: white;
+}
+.ProfileAddPhotoContent .sec-ProfileAddPhoto-cardContent__card {
+  background-color: var(--app-color-tertiary);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid var(--app-color-secondary) 2px;
+  color: var(--app-color-primary);
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  display: flex;
+}
+
+.ProfileScreenContent {
+  background-color: #1A1B22;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.ProfileScreenContent .sec-profile__img {
+  width: 50vh;
+  height: 50vh;
+  top: 0;
+}
+.ProfileScreenContent .sec-profile__data {
+  width: 50vh;
+}
+.ProfileScreenContent .sec-profile__data h5 {
+  color: white;
+}
+.ProfileScreenContent .sec-profile__data p {
+  color: rgb(166, 171, 166);
+  font-weight: bold;
+}
+.ProfileScreenContent .sec-profile__data .profileNameAge {
+  display: flex;
+  justify-content: space-between;
+}
+.ProfileScreenContent .sec-profile__data .profileInterests {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ProfileScreenContent .sec-profile__data .profileInterests p {
+  background-color: var(--app-color-primary);
+  color: white;
+  border-radius: 50px;
+  min-width: 50px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
