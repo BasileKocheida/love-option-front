@@ -46,12 +46,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonIcon } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonIcon, IonCol } from '@ionic/vue';
 import { ellipse, square, triangle } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'HomeScreen',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonGrid, IonRow, IonIcon },
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonGrid, IonRow, IonIcon, IonCol },
   setup() {
     return {
       triangle,

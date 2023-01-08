@@ -19,7 +19,7 @@ export function isAuthenticated(): boolean {
 export class BackendApi {
   constructor(
     public method: string,
-    public url: string
+    public url: string 
   ) {}
 
   public callApi(data: any = null, contentType = '', redirectToLogin = true): Promise<any> {

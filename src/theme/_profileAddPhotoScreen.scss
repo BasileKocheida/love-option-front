@@ -23,5 +23,16 @@
         width: 25vw;
         display: flex;
     }
+
+    .btnNext{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: var(--app-color-primary);
+        width: 40%;
+        color: white;
+    }
    
 }

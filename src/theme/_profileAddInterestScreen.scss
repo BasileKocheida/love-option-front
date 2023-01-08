@@ -2,27 +2,43 @@
     background-color: var(--app-color-tertiary);
     height: 100%;
     padding: 5px;
-
+    
+    
     p{
         margin: 0;
         padding: 10px;
         color: white;
         text-align: center;
     }
+
+    .btnNext{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: var(--app-color-primary);
+        width: 40%;
+        color: white;
+    }
+
     .sec-profileInterest__btn{
         margin-top: 10%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
+        
 
         .btnInterest{
             margin: 10px;
             padding: 10px;
             border-radius: 50px;
-            background-color: var(--app-color-primary);
+            background-color: #be6b6b78;
+            border: solid var(--app-color-secondary) 2px;
             width: 80px;
             color: white;
+            list-style: none;
         }
+        
     }
 }

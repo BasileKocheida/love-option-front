@@ -228,6 +228,16 @@ http://ionicframework.com/docs/theming/ */
   color: white;
   text-align: center;
 }
+.ProfileAddInterestScreenContent .btnNext {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--app-color-primary);
+  width: 40%;
+  color: white;
+}
 .ProfileAddInterestScreenContent .sec-profileInterest__btn {
   margin-top: 10%;
   display: flex;
@@ -238,9 +248,11 @@ http://ionicframework.com/docs/theming/ */
   margin: 10px;
   padding: 10px;
   border-radius: 50px;
-  background-color: var(--app-color-primary);
+  background-color: rgba(190, 107, 107, 0.4705882353);
+  border: solid var(--app-color-secondary) 2px;
   width: 80px;
   color: white;
+  list-style: none;
 }
 
 .ProfileAddPhotoContent {
@@ -267,6 +279,16 @@ http://ionicframework.com/docs/theming/ */
   width: 25vw;
   display: flex;
 }
+.ProfileAddPhotoContent .btnNext {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--app-color-primary);
+  width: 40%;
+  color: white;
+}
 
 .ProfileScreenContent {
   background-color: #1A1B22;
@@ -278,6 +300,10 @@ http://ionicframework.com/docs/theming/ */
 }
 .ProfileScreenContent .sec-profile__img {
   width: 50vh;
+  height: 50vh;
+  top: 0;
+}
+.ProfileScreenContent .sec-profile__img .imgProfile {
   height: 50vh;
   top: 0;
 }
